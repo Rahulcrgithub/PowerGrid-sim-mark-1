@@ -1,0 +1,23 @@
+powergrid_sim/
+├── main.py                      ← Entry point
+├── config/
+│   └── settings.yaml            ← System settings
+├── core/
+│   ├── simulator.py             ← Real-time loop and control
+│   ├── load_profile.py          ← 24h realistic load generator
+│   ├── power_calculator.py      ← All electrical parameter equations
+│   ├── effect_engine.py         ← Harmonics, faults, transients
+│   └── models.py                ← Classes for Line, Load, Fault, etc.
+├── output/
+│   ├── logger.py                ← Real-time data logger
+│   └── visualizer.py            ← Live plotting (matplotlib/plotly)
+├── data/
+│   └── simulation_log.csv       ← Auto-generated
+├── ml/
+│   └── label_generator.py       ← Ground truth labels for ML training (future)
+└── utils/
+    └── helpers.py               ← Unit converters, math utils, etc.
+
+
+
+
